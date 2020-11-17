@@ -1,7 +1,7 @@
 ---
 # https://kafka.apache.org/quickstart-docker
 # https://github.com/simplesteph/kafka-stack-docker-compose/blob/master/zk-single-kafka-single.yml
-version: '3'
+version: '3.5'
 
 services:
   database:
