@@ -6,12 +6,16 @@ package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 import io.connectedhealth_idaas.eventbuilder.common.hl7.HL7SegmentConstants;
 import io.connectedhealth_idaas.eventbuilder.events.platform.RoutingEvent;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author Alan Scott
  *
  */
 public class HL7RoutingEventParser {
+
+	private static final Logger LOG = LoggerFactory.getLogger(HL7RoutingEventParser.class);
 
 	public HL7RoutingEventParser() {
 
@@ -45,7 +49,7 @@ public class HL7RoutingEventParser {
 				// Spilt MSH Segment
 				String msgSegment = segmentData;
 				String[] segmentDetails = segmentData.split("["+fieldDelimiter+"]",0);
-				System.out.println("Segment Count"+segmentDetails.length);
+				LOG.debug("Segment Count {}", segmentDetails.length);
 				// Splitting Routing Data
 				String messageTypeData = segmentDetails[8].toString();
 				//String[] messageTypeDetails = messageTypeData.split("["+componentDelimiter+"]");

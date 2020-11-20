@@ -99,6 +99,9 @@ local.properties
 # IntelliJ local project file
 *.iml
 
+# VSCode
+.vscode
+
 # Gradle:
 .idea/gradle.xml
 .idea/libraries
