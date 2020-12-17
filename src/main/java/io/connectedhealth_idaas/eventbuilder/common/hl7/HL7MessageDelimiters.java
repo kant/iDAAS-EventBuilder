@@ -1,4 +1,4 @@
-package io.connectedhealth_idaas.eventbuilder.pojos.platform;
+package io.connectedhealth_idaas.eventbuilder.common.hl7;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
