@@ -25,7 +25,7 @@ You can leverage this repository once you have cloned the repository locally thr
 ## POM.xml File
 In order to leverage iDAAS Event Builder you can either download, build and then add the JAR file locally or you
 can go ahead and include the following in your existing POM.xml file. We in the dependency we reference
-version 1.2; however, there sre active enhanncements and the releases will continue to grow and expand.
+version 1.2; however, there are active enhancements and the releases will continue to grow and expand.
 
    <dependency>
             <groupId>io.connectedhealth-idaas</groupId>
@@ -47,7 +47,7 @@ Additionally, there is a copy statement to remove any specific version, so it ou
 Automated Builds are going to be done in Azure Pipelines
 
 ## Automated Releases
-Automated Releases are setup and configured. These automated releses will push new releases out to a Maven
+Automated Releases are setup and configured. These automated releases will push new releases out to a Maven
 Repository.
 
 # Ongoing Enhancements
